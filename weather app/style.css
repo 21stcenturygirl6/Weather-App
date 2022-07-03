@@ -1,0 +1,119 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #434343;
+    background: url(https://source.unsplash.com/random/1600x900/?nature,clouds) no-repeat center center/cover;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.card{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 25px;
+    transition: all 0.3s ease;
+}
+.message{
+    display: none;
+}
+.message.show{
+    display: block;
+    background-color: rgb(100, 22, 22);
+    opacity: 0.8;
+    margin: 10px;
+    padding: 15px;
+    border: rgb(173, 23, 23) solid 2px;
+    border-radius: 3px;
+    color: #d4d4d4;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search button{
+    margin: 5px;
+    padding: 7px 5px 6px;
+    padding-top: 11px;
+    border-radius: 2px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    border: none;
+    background: #454545;
+    opacity: 0.8;
+    color: #fff;
+    cursor: pointer;
+}
+.search input{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    background: #454545;
+    opacity: 0.8;
+    color: #fff;
+    width: 100%;
+}
+
+.location button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    background: #454545;
+    opacity: 0.8;
+    color: #d4d4d4;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #767676;
+}
+
+h1.temp{
+    margin: 0;
+    font-size: 55px;
+}
+
+.description{
+    text-transform: capitalize;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex svg{
+    margin: 0 5px;
+}
+
+.weather.hide{
+    display: none;
+}
